@@ -1,0 +1,143 @@
+body{
+    font-family: 'Bungee', cursive;
+    background-color: white;
+    color: black;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+a {
+    color: #7944e6;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #10fdff;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.navContainer {
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navContainer img {
+    width: 24%;
+    max-width: 230px;
+}
+
+.navContainer li {
+    display:inline;
+    padding-left: 12px;
+}
+
+.aboutContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-color: #ff00ff;
+    padding-top: .5%;
+    padding-bottom: .5%;
+}
+
+.aboutContainer img {
+    width: 50%;
+    padding: 2%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.aboutContainer ul {
+    position: relative;
+    left: -12px;
+}
+
+.aboutContainer h1 {
+    margin: 0px;
+}
+
+.aboutContainer p {
+    font-size: 3.0vw;
+    line-height: 1em;
+    margin: 0px;
+}
+
+.cardContainer {
+    position:absolute;
+    display:inline-flex;
+    flex-direction: column;
+    flex-basis: content;
+    padding: 0%;
+    align-items: center;
+    width: 60%;
+    left: 20%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:5px solid #7944e6;
+    margin: 4%;
+    padding: 0%;
+    width: 60%;
+    height: 80%;
+}
+
+.cardContainer img {
+    width: 60%;
+    align-items:center;
+}
+
+@media screen and (min-width: 768px) {
+    body{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .aboutContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #ff00ff;
+        padding-top: .5%;
+        padding-bottom: .5%;
+    }
+
+    .aboutContainer img {
+        width: 35%;
+        padding: 2%;
+        position: relative;
+        left: 0%;
+        transform: translateX(0%)
+    }
+
+    .aboutContainer p {
+        font-size: 18px;
+    }
+
+    .cardContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0%;
+        align-items: center;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border:5px solid #7944e6;
+        margin: 4%;
+        padding: 0%;
+        width: 470px;
+        height: 300px;
+    }
+
+}
